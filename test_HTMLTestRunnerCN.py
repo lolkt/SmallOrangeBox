@@ -2,8 +2,7 @@
 import HTMLTestRunnerCN
 import unittest
 import time
-from SmallOrangeBox.untext import SearchTestCase
-
+from untext import SearchTestCase
 
 suite = unittest.TestSuite()
 # 获取TestSuite的实例对象

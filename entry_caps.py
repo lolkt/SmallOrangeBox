@@ -1,5 +1,6 @@
-from SmallOrangeBox.vecode import *
+from vecode import *
 from selenium.webdriver.common.action_chains import ActionChains
+
 option = webdriver.ChromeOptions()  # 不开开浏览器
 option.add_argument("headless")  # 不开开浏览器
 driver = webdriver.Chrome(chrome_options=option)

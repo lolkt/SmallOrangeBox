@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.action_chains import ActionChains
-from SmallOrangeBox.vecode import VerificationCood
+
 from selenium.webdriver.support.ui import Select
 import time
 

@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 import time
 
-from SmallOrangeBox.public import PySele
+from public import PySele
 import unittest
 # 打开浏览器
 # driver = PySele(brower="Chrome")

@@ -1,6 +1,6 @@
 import unittest
-from SmallOrangeBox.public import PySele
-from SmallOrangeBox.vecode import VerificationCood
+from public import PySele
+from vecode import VerificationCood
 import time
 
 
@@ -9,6 +9,7 @@ class SearchTestCase(unittest.TestCase):
         self.driver = PySele(brower="NotChrome")
         self.driver.open(url="http://admin.kf.vizhuo.cn/")
         self.driver.make_maxwindow()
+
     def check(self, result, result1, username, password, tipstap):
         # 判断元素是否存在
         element = self.driver.element(fangfa="name", dingwei="verificationCode").is_displayed()
@@ -61,15 +62,15 @@ class SearchTestCase(unittest.TestCase):
 
     def test_one(self):
         self.check(result="用户名错误,密码正确用例执行成功", result1="用户名错误,密码正确用例执行失败", username="admin", password="111",
-            tipstap="用户名或密码错误、或账户被停用")
+                   tipstap="用户名或密码错误、或账户被停用")
 
     def test_two(self):
         self.check(result="用户名正确,密码错误用例执行成功", result1="用户名正确,密码错误用例执行失败", username="admin", password="111",
-              tipstap="用户名或密码错误、或账户被停用")
+                   tipstap="用户名或密码错误、或账户被停用")
 
     def test_three(self):
         self.check(result="用户名错误,密码错误用例执行成功", result1="用户名错误,密码错误用例执行失败", username="admin111", password="111",
-              tipstap="用户名或密码错误、或账户被停用")
+                   tipstap="用户名或密码错误、或账户被停用")
 
     def tearDown(self):
         self.driver.close()
