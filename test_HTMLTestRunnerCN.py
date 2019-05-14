@@ -1,7 +1,8 @@
 # coding=utf-8
-import HTMLTestRunnerCN
 import unittest
 import time
+
+import HTMLTestReportCN
 from untext import SearchTestCase
 
 suite = unittest.TestSuite()
@@ -18,7 +19,7 @@ filename = times + "test.html"
 
 fp = open(filename, "wb")
 # 以二进制的方式打开文件并写入结果
-runner = HTMLTestRunnerCN.HTMLTestRunner(
+runner = HTMLTestReportCN.HTMLTestRunner(
     stream=fp,
     verbosity=1,
     title="测试报告的标题",

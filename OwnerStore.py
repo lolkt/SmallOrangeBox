@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 
-from SmallOrangeBox.public import PySele
+from public import PySele
+
 # 打开浏览器
 # driver = PySele(brower="Chrome")
 # 不开开浏览器
@@ -18,7 +19,7 @@ driver.switch_to_frame(fangfa="css", dingwei="#tt > div.tabs-panels > div:nth-ch
 driver.select_value(fangfa="name", dingwei="sysAreaOperateId", value="22")
 driver.send_key(fangfa="css", dingwei="#name", text="赵承钰")
 driver.send_key(fangfa="css", dingwei="#idCard", text="411503199508055315")
-driver.send_key(fangfa="css", dingwei="#mobile", text="15910586223")
+driver.send_key(fangfa="css", dingwei="#mobile", text="15910586228")
 driver.clic(fangfa="css", dingwei="#pageForm > div.formBox > div.Button.t-left > input")
 # 返回主iframe
 driver.out_iframe()
